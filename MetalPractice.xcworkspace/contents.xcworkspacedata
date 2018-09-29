@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:CoreImage/CoreImage.xcodeproj">
+      location = "group:/Users/tsuf/Desktop/testspace/MetalPractice/CoreImage/CI.xcodeproj">
    </FileRef>
 </Workspace>

@@ -14,6 +14,8 @@
 		83311131215F4CDA004D363B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8331112F215F4CDA004D363B /* LaunchScreen.storyboard */; };
 		8331113C215F4CDA004D363B /* CoreImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8331113B215F4CDA004D363B /* CoreImageTests.swift */; };
 		83311147215F4CDA004D363B /* CoreImageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83311146215F4CDA004D363B /* CoreImageUITests.swift */; };
+		83311155215F59D6004D363B /* gf.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 83311154215F59D6004D363B /* gf.jpeg */; };
+		83311157215F5A99004D363B /* BlurViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83311156215F5A99004D363B /* BlurViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +36,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		83311123215F4CD9004D363B /* CoreImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83311123215F4CD9004D363B /* CI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83311126215F4CD9004D363B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83311128215F4CD9004D363B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8331112B215F4CD9004D363B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8331112D215F4CDA004D363B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83311130215F4CDA004D363B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83311132215F4CDA004D363B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		83311137215F4CDA004D363B /* CoreImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83311137215F4CDA004D363B /* CITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8331113B215F4CDA004D363B /* CoreImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreImageTests.swift; sourceTree = "<group>"; };
 		8331113D215F4CDA004D363B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		83311142215F4CDA004D363B /* CoreImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83311142215F4CDA004D363B /* CIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83311146215F4CDA004D363B /* CoreImageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreImageUITests.swift; sourceTree = "<group>"; };
 		83311148215F4CDA004D363B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83311154215F59D6004D363B /* gf.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gf.jpeg; sourceTree = "<group>"; };
+		83311156215F5A99004D363B /* BlurViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurViewController.swift; sourceTree = "<group>"; };
+		83311159215F5B50004D363B /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,15 +86,16 @@
 				8331113A215F4CDA004D363B /* CoreImageTests */,
 				83311145215F4CDA004D363B /* CoreImageUITests */,
 				83311124215F4CD9004D363B /* Products */,
+				83311158215F5B50004D363B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		83311124215F4CD9004D363B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				83311123215F4CD9004D363B /* CoreImage.app */,
-				83311137215F4CDA004D363B /* CoreImageTests.xctest */,
-				83311142215F4CDA004D363B /* CoreImageUITests.xctest */,
+				83311123215F4CD9004D363B /* CI.app */,
+				83311137215F4CDA004D363B /* CITests.xctest */,
+				83311142215F4CDA004D363B /* CIUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,12 +103,14 @@
 		83311125215F4CD9004D363B /* CoreImage */ = {
 			isa = PBXGroup;
 			children = (
+				83311154215F59D6004D363B /* gf.jpeg */,
 				83311126215F4CD9004D363B /* AppDelegate.swift */,
 				83311128215F4CD9004D363B /* ViewController.swift */,
 				8331112A215F4CD9004D363B /* Main.storyboard */,
 				8331112D215F4CDA004D363B /* Assets.xcassets */,
 				8331112F215F4CDA004D363B /* LaunchScreen.storyboard */,
 				83311132215F4CDA004D363B /* Info.plist */,
+				83311156215F5A99004D363B /* BlurViewController.swift */,
 			);
 			path = CoreImage;
 			sourceTree = "<group>";
@@ -125,12 +133,20 @@
 			path = CoreImageUITests;
 			sourceTree = "<group>";
 		};
+		83311158215F5B50004D363B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83311159215F5B50004D363B /* CoreImage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		83311122215F4CD9004D363B /* CoreImage */ = {
+		83311122215F4CD9004D363B /* CI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8331114B215F4CDA004D363B /* Build configuration list for PBXNativeTarget "CoreImage" */;
+			buildConfigurationList = 8331114B215F4CDA004D363B /* Build configuration list for PBXNativeTarget "CI" */;
 			buildPhases = (
 				8331111F215F4CD9004D363B /* Sources */,
 				83311120215F4CD9004D363B /* Frameworks */,
@@ -140,14 +156,14 @@
 			);
 			dependencies = (
 			);
-			name = CoreImage;
+			name = CI;
 			productName = CoreImage;
-			productReference = 83311123215F4CD9004D363B /* CoreImage.app */;
+			productReference = 83311123215F4CD9004D363B /* CI.app */;
 			productType = "com.apple.product-type.application";
 		};
-		83311136215F4CDA004D363B /* CoreImageTests */ = {
+		83311136215F4CDA004D363B /* CITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8331114E215F4CDA004D363B /* Build configuration list for PBXNativeTarget "CoreImageTests" */;
+			buildConfigurationList = 8331114E215F4CDA004D363B /* Build configuration list for PBXNativeTarget "CITests" */;
 			buildPhases = (
 				83311133215F4CDA004D363B /* Sources */,
 				83311134215F4CDA004D363B /* Frameworks */,
@@ -158,14 +174,14 @@
 			dependencies = (
 				83311139215F4CDA004D363B /* PBXTargetDependency */,
 			);
-			name = CoreImageTests;
+			name = CITests;
 			productName = CoreImageTests;
-			productReference = 83311137215F4CDA004D363B /* CoreImageTests.xctest */;
+			productReference = 83311137215F4CDA004D363B /* CITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		83311141215F4CDA004D363B /* CoreImageUITests */ = {
+		83311141215F4CDA004D363B /* CIUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 83311151215F4CDA004D363B /* Build configuration list for PBXNativeTarget "CoreImageUITests" */;
+			buildConfigurationList = 83311151215F4CDA004D363B /* Build configuration list for PBXNativeTarget "CIUITests" */;
 			buildPhases = (
 				8331113E215F4CDA004D363B /* Sources */,
 				8331113F215F4CDA004D363B /* Frameworks */,
@@ -176,9 +192,9 @@
 			dependencies = (
 				83311144215F4CDA004D363B /* PBXTargetDependency */,
 			);
-			name = CoreImageUITests;
+			name = CIUITests;
 			productName = CoreImageUITests;
-			productReference = 83311142215F4CDA004D363B /* CoreImageUITests.xctest */;
+			productReference = 83311142215F4CDA004D363B /* CIUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -204,7 +220,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8331111E215F4CD9004D363B /* Build configuration list for PBXProject "CoreImage" */;
+			buildConfigurationList = 8331111E215F4CD9004D363B /* Build configuration list for PBXProject "CI" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -217,9 +233,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				83311122215F4CD9004D363B /* CoreImage */,
-				83311136215F4CDA004D363B /* CoreImageTests */,
-				83311141215F4CDA004D363B /* CoreImageUITests */,
+				83311122215F4CD9004D363B /* CI */,
+				83311136215F4CDA004D363B /* CITests */,
+				83311141215F4CDA004D363B /* CIUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -229,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83311155215F59D6004D363B /* gf.jpeg in Resources */,
 				83311131215F4CDA004D363B /* LaunchScreen.storyboard in Resources */,
 				8331112E215F4CDA004D363B /* Assets.xcassets in Resources */,
 				8331112C215F4CD9004D363B /* Main.storyboard in Resources */,
@@ -257,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83311129215F4CD9004D363B /* ViewController.swift in Sources */,
+				83311157215F5A99004D363B /* BlurViewController.swift in Sources */,
 				83311127215F4CD9004D363B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,12 +300,12 @@
 /* Begin PBXTargetDependency section */
 		83311139215F4CDA004D363B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 83311122215F4CD9004D363B /* CoreImage */;
+			target = 83311122215F4CD9004D363B /* CI */;
 			targetProxy = 83311138215F4CDA004D363B /* PBXContainerItemProxy */;
 		};
 		83311144215F4CDA004D363B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 83311122215F4CD9004D363B /* CoreImage */;
+			target = 83311122215F4CD9004D363B /* CI */;
 			targetProxy = 83311143215F4CDA004D363B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -480,7 +498,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreImage.app/CoreImage";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CI.app/CI";
 			};
 			name = Debug;
 		};
@@ -500,7 +518,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreImage.app/CoreImage";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CI.app/CI";
 			};
 			name = Release;
 		};
@@ -545,7 +563,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8331111E215F4CD9004D363B /* Build configuration list for PBXProject "CoreImage" */ = {
+		8331111E215F4CD9004D363B /* Build configuration list for PBXProject "CI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83311149215F4CDA004D363B /* Debug */,
@@ -554,7 +572,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8331114B215F4CDA004D363B /* Build configuration list for PBXNativeTarget "CoreImage" */ = {
+		8331114B215F4CDA004D363B /* Build configuration list for PBXNativeTarget "CI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8331114C215F4CDA004D363B /* Debug */,
@@ -563,7 +581,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8331114E215F4CDA004D363B /* Build configuration list for PBXNativeTarget "CoreImageTests" */ = {
+		8331114E215F4CDA004D363B /* Build configuration list for PBXNativeTarget "CITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8331114F215F4CDA004D363B /* Debug */,
@@ -572,7 +590,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83311151215F4CDA004D363B /* Build configuration list for PBXNativeTarget "CoreImageUITests" */ = {
+		83311151215F4CDA004D363B /* Build configuration list for PBXNativeTarget "CIUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83311152215F4CDA004D363B /* Debug */,
